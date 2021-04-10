@@ -1,0 +1,479 @@
+html, body{
+    height: 100%;
+}
+
+body{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+ .top{
+    background: green;
+    height: 100%;
+}
+
+navbar{
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+}
+
+navbar img{
+     width: 10%; 
+     height: 10%;
+}
+
+navbar li{
+    float: left;
+    margin: 10px;
+    list-style: none;
+    font-weight: bold;
+}
+
+navbar li a{
+    text-decoration: none;
+    color: green;
+}
+.second{
+     height: 84%;
+    width: 100%;
+    position: relative;
+    margin-top: -79px;
+}
+
+.second::before{
+    content: '';
+    background-image: url("../img/top.jpeg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    opacity: 0.2;
+    position: absolute;
+}
+
+
+
+#top{
+    margin: auto;
+    text-align: center;
+    justify-self: center;
+    height: 100%;
+    color: #fff;
+    /* background: #000; */
+}
+
+#top h1{
+    font-weight: bolder;
+    font-size: 100px;
+    padding-top: 10%;
+} 
+
+#top p{
+    color: black;
+    font-weight: bolder;
+} 
+
+.upper h2{
+    text-align: center;
+    font-size: 45px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    text-align: center;
+}
+
+.grid img{
+    width: 40%;
+    height: 50%;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.grid1{
+     border: rgba(34, 129, 3, 0.233) 1px solid  ;
+}
+
+.about{
+    background: #25252573;
+    display: flex;
+    margin-top: 10px;
+    text-align: center;
+    padding: 70px 50px 70px 50px;
+    height: 200px;
+}
+
+#about{
+    margin: 20px;
+}
+
+
+.about img{
+    width: 25%;
+    height: 70%;
+    margin:3% 10% 0 0; 
+}
+
+.test img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: green;
+}
+
+.test{
+    display: flex;
+    padding: 50px;
+    text-align: center;
+}
+
+.subscribe{
+    background: green;
+    height: 100px;
+}
+
+.subscribe #email{
+    margin: 20px 20px 0px 300px;
+    background: #fff;
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    border: white solid 1px;
+}
+
+.subscribe input[placeholder="Email"]{
+    color: #fff;
+}
+
+.subscribe #submit{
+    /* margin: 20px 20px 0px 300px; */
+    /* background: green; */
+    /* width: 250px; */
+    height: 40px;
+    color:green;
+    border-radius: 10px;
+    border: #fff solid 1px;
+}
+
+.final{
+    display: flex;
+    padding: 0px 100px 0px 100px;
+}
+
+.final1{
+    text-align: center;
+    margin: 0px 100px 0px 0px;
+}
+
+.contact{
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.contact img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.contact a{
+    cursor: pointer;
+}
+
+footer{
+    background: green;
+    height: 20px;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    
+    border-bottom: #fff solid 1px;
+}
+
+@media(max-width:1000px){
+    .top{
+        height: 100vh;
+        width: 100%;
+    }
+
+    navbar img{
+        width: 20%; 
+        height: 20%;
+   }
+
+   navbar li{
+    margin: 10px 10px 0px 10px;
+    font-size: 40px;
+    display: inline;
+    border: green solid 1px;
+    text-align: center;
+    border-radius: 10px;
+   }
+
+   #top h1{
+    font-size: 130px;
+    padding-top: 40%;
+   } 
+
+   #top p{
+       font-size: 50px;
+       color: #D0FFA1;
+       border: wheat solid 5px;
+       margin-top: 200px;
+   }
+   
+   .upper h2{
+       font-size: 80px;
+   }
+   
+   .grid{
+       display: flex;
+       flex-direction: column;
+       margin: 100px;
+       text-align: center;
+       align-items: center;
+   }
+   
+   .grid1{
+       margin-top: 50px;
+       background: #50A000;
+       height: 600px;
+       width: 600px;
+   }
+   
+   .grid h1{
+       font-size: 70px;
+       color: white;
+   }
+   
+   .grid p{
+       font-size: 30px;
+       color: white;
+   }
+   
+   .about{
+       flex-direction:column;
+       align-items: center;
+       height: 700px;
+       margin: 0;
+       color: white;
+   }
+   
+   #about h1{
+       font-size: 50px;
+   }
+   
+   #about p{
+       font-size: 50px;
+   }
+   
+   .about img{
+       height: 250px;
+       width: 400px;
+   }
+   
+   .test{
+       flex-direction: column;
+       align-items: center;
+       color: green;
+   }
+   
+   .test h1{
+       font-size: 50px;
+   }
+   
+   .test p{
+       font-size: 40px;
+   }
+   
+   .subscribe{
+       height: 150px;
+   }
+   
+   .subscribe #email{
+       width: 500px;
+       height: 80px;
+       margin-left: 100px;
+       border-radius: 30px;
+       font-size: 30px;
+   }
+   
+   .subscribe #submit{
+       width: 150px;
+       height: 80px;
+       font-size: 25px;
+   }
+   
+   .final{
+       flex-direction:column;
+       color: green;
+   }
+   
+   .final h1{
+       font-size: 50px;
+   }
+   
+   .final1{
+       font-size: 40px;
+       padding: 0;
+   }
+   
+   .contact{
+       border-top: green solid 5px;
+   }
+   
+   .contact img{
+       width: 150px;
+       height: 150px;
+   }
+   
+   footer{
+       font-size: 50px;
+       height: 50px;
+   }
+   
+} 
+
+@media(max-width:750px){
+    .top{
+        height: 100vh;
+        width: 100%;
+    }
+
+    navbar img{
+        width: 20%; 
+        height: 20%;
+   }
+
+   navbar li{
+    margin: 0px 0px 5px 5px;
+    font-size: 15px;
+   }
+
+   #top h1{
+    font-size: 50px;
+    padding-top: 40%;
+   } 
+
+   #top p{
+       font-size: 15px;
+       color: #D0FFA1;
+       border: wheat solid 2px;
+       margin-top: 100px;
+   }
+   
+   .upper h2{
+       font-size: 30px;
+   }
+   
+   .grid{
+       display: flex;
+       flex-direction: column;
+       margin: 100px;
+       text-align: center;
+       align-items: center;
+   }
+   
+   .grid1{
+       margin-top: 20px;
+       background: #50A000;
+       height: 300px;
+       width: 300px;
+   }
+   
+   .grid h1{
+       font-size: 30px;
+       color: white;
+   }
+   
+   .grid p{
+       font-size: 15px;
+       color: white;
+   }
+   
+   .about{
+       flex-direction:column;
+       align-items: center;
+       height: 400px;
+       margin: 0;
+       color: white;
+   }
+   
+   #about h1{
+       font-size: 40px;
+   }
+   
+   #about p{
+       font-size: 20px;
+   }
+   
+   .about img{
+       height: 150px;
+       width: 300px;
+   }
+   
+   .test{
+       flex-direction: column;
+       align-items: center;
+       color: green;
+   }
+   
+   .test h1{
+       font-size: 30px;
+   }
+   
+   .test p{
+       font-size: 15px;
+   }
+   
+   .subscribe{
+       height: 80px;
+   }
+   
+   .subscribe #email{
+       width: 200px;
+       height: 30px;
+       font-size: 15px;
+   }
+   
+   .subscribe #submit{
+       width: 100px;
+       height: 30px;
+       font-size: 15px;
+   }
+   
+   .final{
+       flex-direction:column;
+       color: green;
+   }
+   
+   .final h1{
+       font-size: 30px;
+   }
+   
+   .final1{
+       font-size: 15px;
+       padding: 0;
+   }
+   
+   .contact{
+       flex-direction: column;
+       border-top: green solid 5px;
+   }
+   
+   .contact img{
+       width: 50px;
+       height: 50px;
+   }
+   
+   footer{
+       font-size: 20px;
+       height: 30px;
+   }
+
+}
